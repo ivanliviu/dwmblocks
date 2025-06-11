@@ -1,21 +1,11 @@
-# dwmblocks
+Modular status bar for dwm
 
-Modular status bar for dwm written in c.
-
-# Modifying blocks
-
+## Modifying blocks
 The statusbar is made from text output from commandline programs.  Blocks are
 added and removed by editing the config.h file.
 
-# Luke's build
-
-I have dwmblocks read my preexisting scripts
-[here in my dotfiles repo](https://github.com/LukeSmithxyz/voidrice/tree/master/.local/bin/statusbar).
-So if you want my build out of the box, download those and put them in your
-`$PATH`. I do this to avoid redundancy in LARBS, both i3 and dwm use the same
-statusbar scripts.
-
-# Signaling changes
+scripts in `voidrice/tree/master/.local/bin/statusbar`, must be in `$PATH`
+i3 and dwm both use the same
 
 Most statusbars constantly rerun every script every several seconds to update.
 This is an option here, but a superior choice is giving your module a signal
@@ -33,8 +23,7 @@ along side my volume shortcuts in dwm to only update it when relevant.
 
 Note that all modules must have different signal numbers.
 
-# Clickable modules
-
+## Clickable modules
 Like i3blocks, this build allows you to build in additional actions into your
 scripts in response to click events.  See the above linked scripts for examples
 of this using the `$BLOCK_BUTTON` variable.
